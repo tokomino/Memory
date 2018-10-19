@@ -364,7 +364,7 @@ namespace MatchingGame
 
             // If the loop didn’t return, it didn't find
             // any unmatched icons
-            // That means the user won. Show a message and close the form
+            // Show a message and close the form
             this.Hide();
             data.Setwin1(win1);
             data.Setwin2(win2);
