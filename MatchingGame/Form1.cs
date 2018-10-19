@@ -349,11 +349,13 @@ namespace MatchingGame
         /// </summary>
         private void CheckForWinner()
         {
+            //Initializes iconlabel before entering the loop so it just has to be reasigned
+            Label iconlabel = null;
             // Go through all of the labels in the TableLayoutPanel, 
             // checking each one to see if its icon is matched
             foreach (Control control in tableLayoutPanel1.Controls)
             {
-                Label iconLabel = control as Label;
+                iconLabel = control as Label;
 
                 if (iconLabel != null)
                 {
